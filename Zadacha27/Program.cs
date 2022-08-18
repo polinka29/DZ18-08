@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+//452 -> 11
+//82 -> 10
+
+Console.Write("Введите число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+int digit = (a%10);
+int count=10; 
+int b=0; 
+while (a/count>0) 
+{ 
+   b = b+(a%10);
+   a = a/10;
+}
+ Console.WriteLine(a + b);
+ 
